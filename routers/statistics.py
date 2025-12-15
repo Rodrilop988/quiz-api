@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.database import get_db
-from app.models.question import Question
-from app.models.quiz_session import QuizSession
+from models.question import Question
+from models.quiz_session import QuizSession
 
 router = APIRouter(prefix="/statistics", tags=["Statistics"])
 

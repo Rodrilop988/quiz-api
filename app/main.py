@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.database import Base, engine
-from app.routers import questions, quiz_sessions, statistics
+from routers import questions, quiz_sessions, statistics
 
 Base.metadata.create_all(bind=engine)
 

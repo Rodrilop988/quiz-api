@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from datetime import datetime
 from app.database import get_db
-from app.models.quiz_session import QuizSession
-from app.services.quiz_service import calcular_puntuacion
+from models.quiz_session import QuizSession
+from services.quiz_service import calcular_puntuacion
 
 router = APIRouter(prefix="/quiz-sessions", tags=["Quiz Sessions"])
 
